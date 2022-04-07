@@ -1,11 +1,15 @@
-package com.jackcattanach.PokerTool.Dtos;
+package com.jackcattanach.PokerTool.dto;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
-public class Bets {
+public class BetDto {
+
+    private Long betId;
+
+    private Long handId;
 
     private BigDecimal betAmount;
 

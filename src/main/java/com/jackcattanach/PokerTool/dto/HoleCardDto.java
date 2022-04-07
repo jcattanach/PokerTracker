@@ -1,9 +1,9 @@
-package com.jackcattanach.PokerTool.Dtos;
+package com.jackcattanach.PokerTool.dto;
 
 import lombok.Data;
 
 @Data
-public class HoleCards {
+public class HoleCardDto {
 
     private String holeCardOne;
     private String holeCardTwo;

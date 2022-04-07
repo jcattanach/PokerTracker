@@ -1,4 +1,4 @@
-package com.jackcattanach.PokerTool.Dtos;
+package com.jackcattanach.PokerTool.dto;
 
 import lombok.Data;
 
@@ -7,9 +7,11 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-public class GameInfo {
+public class GameInfoDto {
 
-    private long gameId;
+    private Long gameId;
+
+    private Long userId;
 
     private String gameType; // cash or tournament
 
@@ -17,11 +19,11 @@ public class GameInfo {
 
     private BigDecimal buyInAmount;
 
-    private BlindStructure blindStructure;
+    private BlindStructureDto blindStructure;
 
     private Integer numberOfPlayers;
 
     private BigDecimal winLossAmount;
 
-    private List<Hands> memorableHands;
+    private List<HandDto> memorableHands;
 }

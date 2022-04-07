@@ -1,9 +1,11 @@
-package com.jackcattanach.PokerTool.Dtos;
+package com.jackcattanach.PokerTool.dto;
 
 import lombok.Data;
 
 @Data
-public class BlindStructure {
+public class BlindStructureDto {
+
+    private Long handId;
 
     private Double smallBlind;
 

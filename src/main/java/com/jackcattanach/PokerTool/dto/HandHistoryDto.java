@@ -1,19 +1,19 @@
-package com.jackcattanach.PokerTool.Dtos;
+package com.jackcattanach.PokerTool.dto;
 
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class HandHistory {
+public class HandHistoryDto {
 
     private Long handId;
 
     private Long gameId;
 
-    private List<Hands> hands;
+    private List<HandDto> hands;
 
-    private List<Bets> bets;
+    private List<BetDto> bets;
 
     private String notes;
 }
